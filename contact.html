@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact Form</title>
+<script src="script/jquery-1.9.0.js" type="text/javascript"></script>
+<script src="script/jquery.validate.min.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+	$("#frm").validate();
+});
+</script>
+</head>
+<body>
+
+	<p class="hdr2">Contact Us</p>
+    <p>Please send comments, praise, complaints, inquiries, or other feedback to us.</p>
+
+	<form id="frm" method="post" action="script/mailer.php">
+    	Your Name: <input type="text" class="required" name="name" size=20 /><br />
+    	Your Email: <input type="text" class="required email" name="email" size=20 /><br />
+    	<textarea rows="9" name="message" cols="30"></textarea><br />
+        <p><input type="submit" value="Submit" name="submit" /><p>
+	</form>
+    
+</body>
+</html>

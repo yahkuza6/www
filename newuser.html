@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>New User Creation</title>
+<script src="script/jquery-1.9.0.js" type="text/javascript"></script>
+<script src="script/jquery.validate.min.js" type="text/javascript"></script>
+<link href="php/newuser.php">
+<link href="php/user.php">
+<script>
+$(document).ready(function(){
+	$("#frm").validate();
+});
+</script>
+</head>
+
+<body>
+	<p class="hdr2">Create New User</p>
+
+	<form id="frm" method="post" action="php/newuser.php">
+    	Your Name: <input type="text" class="required" name="name" size="20" /><br />
+    	Your Email: <input type="text" class="required email" name="email" size="20" /><br />
+        Choose Password: <input type="password" class="required password" name="password" size="20" /><br />
+        
+    	<p><input type="submit" value="Submit" name="submit" /><p>
+	</form>
+</body>
+</html>

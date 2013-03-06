@@ -1,0 +1,141 @@
+@charset "utf-8";
+/*
+ Filename: site.css
+ Author: Kevin Rich
+ Date: Feb 2013 for CS361: Software Development
+ Oregon State University
+ 
+ Purpose: provides site style 
+ */
+html, body{
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, Verdana, Sans-serif;
+}
+
+#error {
+	color:#FF0000;
+	font-style: italic;
+	text-decoration: blink;
+	font-weight: bold;
+}
+
+#success {
+	color:#006600;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.hidden {
+	display:none;
+}
+
+#hdr1 {
+	margin:0;
+	padding:0;
+	font-size: 28px;
+	font-weight: bold;
+	color: #db6d16;
+	text-align:center;
+	vertical-align: middle;
+	padding-bottom:15px;
+}
+
+#hdr2 {
+	margin:0;
+	padding:0;
+	font-size:16px;
+	font-weight:bold;
+	color: #db6d16;
+	padding-bottom:15px;
+}
+
+#page-container {
+	width: 760px;
+	margin:auto;
+}
+
+#header {
+	height: 119px
+	padding: 25px;
+}
+
+#content {
+	padding: 25px;
+}
+
+#content p {
+	margin:0;
+	padding: 0;
+	padding-bottom:15px;
+	line-height:18px;
+}
+
+#content hdr2 {
+	padding-bottom: 15px;
+}
+
+#content .padding{
+	padding:25px;
+}
+#content a {
+	color:#000000;
+	text-decoration: underline;
+}
+
+#content a:hover{
+	text-decoration: underline;
+}
+
+#header-nav{
+	clear:both;
+	background: black;
+	padding: 5px 25px 5px 25px;
+	font-weight: bold;
+	color: #FFF;
+}
+
+#header-nav li{
+	display: block;
+	list-style: none;
+}
+
+a {
+	color:#fff;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#C60;
+}
+
+#header-nav #altnav {
+	width:350px;
+	float:right;
+	text-align:right;
+}
+
+#footer{
+	clear:both;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#333333;
+	border-top:1px solid #333333;
+	padding: 13px 25px;
+	line-height:18px;
+}
+
+#footer a {
+	color:#333333;
+	text-decoration:none;
+}
+
+#footer a:hover{
+	color:#db6d16;
+}
+
+#footer #altnav {
+	width:350px;
+	float:right;
+	text-align:right;
+}

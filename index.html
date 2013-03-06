@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Course Planner</title>
+<link href="css/site.css" rel="stylesheet" type="text/css" />
+
+<!-- Manifest for IDE support. Nothing NEEDED until next comment -->
+<link href="header-nav.html" rel="contents"/>
+<link href="header.html" />
+<link href="content.html" />
+<link href="footer.html" />
+<link href="contact.html" />
+<link href="planner.html" />
+<link href="testingpage.html" />
+<link href="php/site_settings.php" />
+
+<link href="php/user.php" />
+<link href="php/major_survey.php" /><!-- includes Question Class -->
+<link href="php/major.php" />
+<link href="php/course.php" />
+<link href="php/section.php" />
+<link href="php/plans.php" />
+<link href="php/options.php" />
+<link href="php/display.php" />
+<link href="php/assembler.php" />
+<!-- End section -->
+
+<script type="text/javascript" src="js/courseplanner.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.0.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+	<!-- load these sections in titled divs when page is ready -->
+	$('#header-nav').load('header-nav.html');
+	$('#header').load('header.html');
+	$('#content').load('content.html');
+    $('#footer').load('footer.html');
+});
+</script>
+</head>
+
+<body>
+<div id="page-container">
+    <div id="header-nav">Header Navigation</div>
+    <div id="header">Header</div>
+    <div id="content">Content</div>
+    <div id="footer">Footer</div>
+</div>
+</body>
+</html>
